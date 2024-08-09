@@ -77,6 +77,12 @@ sudo hciconfig -a hci0 reset
 Now you can use the tool!
 
 ## Usage
+Before using enable the virtual environment of the tool:
+
+```sh
+source ${tool_installation_path}/.venv/bin/activate
+```
+
 Run the following command to display the help information:
 
 ```sh
