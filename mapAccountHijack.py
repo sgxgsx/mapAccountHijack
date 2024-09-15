@@ -51,9 +51,11 @@ if __name__ == '__main__':
 
     # Access the values of the variables
     address = args.address
-    send_sms = args.send_sms
+    send_sms = False
     backend = args.backend
     phone_number = args.phone_number
+    if phone_number is not None:
+        send_sms = True
     sms_content = args.sms_content
     dest_dir = args.dest_dir
 
