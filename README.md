@@ -182,7 +182,7 @@ But you can try to do the following:
 3. Do not pair with a device if you do not expect a connection from it, even if it claims to be yours!
 
 ## How to discover Bluetooth MAC Addresses
-1. Blue's Clues (all)
+1. [Blue's Clues](https://www.cise.ufl.edu/~butler/pubs/oakland23-tucker.pdf) (allows to discover a full Bluetooth Classic MAC address)
 2. Simply Listen (only discoverable devices)
 ```
 some:~$ bluetoothctl --agent=NoInputNoOutput
@@ -192,6 +192,7 @@ Agent registered
 Discovery started
 [CHG] Controller AA:BB:CC:DD:EE:FF Discovering: yes
 ```
+3. Use [WiGLE](https://wigle.net/) to discover the MAC addresses or parts of the MAC addresses in a specific area. If the data lacks NAP and UAP then you can use the information to aid you in discovery of UAP and NAP with the following techniques [Ubertooth - Discovering Bluetooth UAP](https://ubertooth.blogspot.com/2014/06/discovering-bluetooth-uap.html) and [Blue's Clues](https://www.cise.ufl.edu/~butler/pubs/oakland23-tucker.pdf)
 
 ## How to spoof Bluetooth MAC Address
 It will be soon added to the tool for your ease
